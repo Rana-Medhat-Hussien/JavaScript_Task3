@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake API Data Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Data</h1>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+            </tr>
+        </thead>
+        <tbody id="res"></tbody>
+        </table>
+
+        <br>
+
+    <div>
+        <h2>Get Post by ID</h2>
+        <input type="number" id="databyid" placeholder="Enter Post ID" />
+        <button onclick="GetDataBYID()">Get Data</button>
+        <p><strong>ID:</strong> <span id="id"></span></p>
+        <p><strong>Title:</strong> <span id="title"></span></p>
+        <p><strong>Body:</strong> <span id="body"></span></p>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
